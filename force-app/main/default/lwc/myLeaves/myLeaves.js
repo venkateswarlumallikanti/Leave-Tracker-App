@@ -19,6 +19,7 @@ const COLUMNS =
             value: 'edit'
         }
     }
+
 ]
 
 export default class MyLeaves extends LightningElement {
@@ -42,4 +43,7 @@ export default class MyLeaves extends LightningElement {
     }
 
 
+    get noRecordsFound() {
+        return this.myLeaves.length == 0;
+    }
 }
